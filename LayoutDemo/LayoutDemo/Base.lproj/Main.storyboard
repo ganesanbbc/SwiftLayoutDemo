@@ -90,6 +90,39 @@
             </objects>
             <point key="canvasLocation" x="204" y="975"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="9N1-aR-ocE">
+            <objects>
+                <viewController id="22y-8r-q90" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZHi-jh-ibF"/>
+                        <viewControllerLayoutGuide type="bottom" id="ll4-j0-iXU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nt4-gY-mus" customClass="TableViewCell" customModule="LayoutDemo" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9j2-TH-cv1">
+                                <rect key="frame" x="175.33333333333334" y="352.33333333333331" width="63.333333333333314" height="31.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9j2-TH-cv1" firstAttribute="centerX" secondItem="nt4-gY-mus" secondAttribute="centerX" id="DPa-rh-rzk"/>
+                            <constraint firstItem="9j2-TH-cv1" firstAttribute="centerY" secondItem="nt4-gY-mus" secondAttribute="centerY" id="Rvf-GO-jwz"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="label" destination="9j2-TH-cv1" id="f70-7Q-q5U"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDp-RZ-PGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1297" y="975"/>
+        </scene>
         <!--Navigation View Controller-->
         <scene sceneID="9zf-KQ-Zii">
             <objects>
@@ -169,6 +202,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2vq-Nr-E3e">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Jpc-P4-Q2w" id="gfS-LR-fmp"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
