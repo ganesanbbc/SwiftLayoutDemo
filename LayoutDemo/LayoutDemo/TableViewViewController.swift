@@ -24,18 +24,22 @@ class TableViewViewController: UIViewController, UITableViewDataSource, UITableV
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10;
+        return 20;
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell =  Bundle.main.loadNibNamed("TableViewCell", owner: self, options: nil)?.first as!TableViewCell
-        
-
         cell.label.text = String(indexPath.row)
-        
-//        let cell = TableViewCell()
-//        cell.textLabel?.text = String(indexPath.row)
+        cell.selectionStyle = .none
         return cell;
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+        let alert = UIAlertController(title: "Selected Item", message: String(indexPath.row), preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default,
+                                      handler: nil))
+        self.present(alert, animated:true, completion: nil)
     }
 }
