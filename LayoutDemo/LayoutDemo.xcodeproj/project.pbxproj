@@ -16,6 +16,7 @@
 		BA3CD0861DE9770500AE97E1 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3CD0851DE9770500AE97E1 /* NavigationViewController.swift */; };
 		BA3CD08B1DE9F59900AE97E1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3CD0891DE9F59900AE97E1 /* TableViewCell.swift */; };
 		BA3CD08C1DE9F59900AE97E1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3CD08A1DE9F59900AE97E1 /* TableViewCell.xib */; };
+		BA3CD08E1DEAC2EC00AE97E1 /* CollectionViewUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3CD08D1DEAC2EC00AE97E1 /* CollectionViewUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BA3CD0851DE9770500AE97E1 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationViewController.swift; path = ../NavigationViewController.swift; sourceTree = "<group>"; };
 		BA3CD0891DE9F59900AE97E1 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../TableViewCell.swift; sourceTree = "<group>"; };
 		BA3CD08A1DE9F59900AE97E1 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell.xib; path = ../TableViewCell.xib; sourceTree = "<group>"; };
+		BA3CD08D1DEAC2EC00AE97E1 /* CollectionViewUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				BA3CD0781DE52D9A00AE97E1 /* Assets.xcassets */,
 				BA3CD07A1DE52D9A00AE97E1 /* LaunchScreen.storyboard */,
 				BA3CD07D1DE52D9A00AE97E1 /* Info.plist */,
+				BA3CD08D1DEAC2EC00AE97E1 /* CollectionViewUIViewController.swift */,
 			);
 			path = LayoutDemo;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				BA3CD0741DE52D9A00AE97E1 /* ViewController.swift in Sources */,
 				BA3CD0841DE9723900AE97E1 /* TableViewViewController.swift in Sources */,
 				BA3CD0721DE52D9A00AE97E1 /* AppDelegate.swift in Sources */,
+				BA3CD08E1DEAC2EC00AE97E1 /* CollectionViewUIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
