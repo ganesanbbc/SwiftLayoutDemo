@@ -36,10 +36,19 @@ class TableViewViewController: UIViewController, UITableViewDataSource, UITableV
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+//        print(indexPath.row)
         let alert = UIAlertController(title: "Selected Item", message: String(indexPath.row), preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default,
-                                      handler: nil))
+        
+        alert.addAction(UIAlertAction(title: "Okay",
+                                      style: UIAlertActionStyle.default,
+                                      handler: { action in self.someHandler(String(indexPath.row)) }))
+        
+        
         self.present(alert, animated:true, completion: nil)
+    }
+    
+    func someHandler(_ selectedRow: String) {
+        print("selected"+String(selectedRow))
+        // Do something...
     }
 }
